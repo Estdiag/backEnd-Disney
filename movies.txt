@@ -1,0 +1,52 @@
+[
+  {"tittle":  "Aladdin",
+       "image": "https://static.wikia.nocookie.net/doblaje/images/2/2f/Aladdin_Animated_Series_DVD.jpg/revision/latest/top-crop/width/360/height/450?cb=20201004165029&path-prefix=es",
+    "creationDate": 25 de noviembre de 1992,
+"qualification": "3"},
+
+{"tittle": "The Return of Jafar",
+"image": "https://m.media-amazon.com/images/I/514PYP1K0JL._AC_SY445_.jpg",
+    "creationDate": "May 20, 1994",
+"qualification": "4"},
+
+{"tittle": "Aladdin and the King of Thieves",
+"image": "https://m.media-amazon.com/images/I/51bP-8ryAiL._SY445_.jpg",
+"creationDate": "08 de enero de 1999",
+"qualification": "5"},
+
+{"tittle": "Mickey's Magical Christmas",
+"image": "https://static.wikia.nocookie.net/house-of-mouse/images/a/a0/Mickey%27s_Magical_Christmas.jpg/revision/latest?cb=20140412181103&path-prefix=es",
+"creationDate": "20 de mayo de 2001",
+"qualification": "4"},
+
+{"tittle": "Mickey's House of Villains",
+"image": "https://pics.filmaffinity.com/Mickey_s_House_of_Villains-987545085-large.jpg",
+"creationDate": "15 de febrero de 1998",
+"qualification": "2"},
+
+{"tittle": "House of Mouse",
+"image": "https://www.revistaestilo.net/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=_eYjUvjGcNRvS4sHlx46Bc$daE2N3K4ZzOUsqbU5sYuXkWgP7nJpbSOzy_bHtYCo6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&CONTENTTYPE=image/jpeg",
+"creationDate": "04 de noviembre de 2002",
+"qualification": "3"},
+
+{"tittle": "16 Wishes",
+"image": "https://m.media-amazon.com/images/I/91G1bTiKbyL._SY550_.jpg",
+"creationDate": "16 de septiembre de 2003",
+"qualification": "4"},
+
+{"tittle": "Inside Out",
+"image": "https://www.melomanodigital.com/wp-content/uploads/2020/11/CINE-267-INSIDE-OUT-1-scaled.jpg",
+"creationDate": "12 de julio de 2014",
+"qualification": "5"},
+
+{"tittle": "Riley's first date?",
+"image": "https://m.media-amazon.com/images/M/MV5BMDZlY2M3NDItMmMzZC00NDhlLThiMGItYjIwMWMxZjdiMWU1XkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_.jpg",
+"creationDate": "12 de diciembre de 2015",
+"qualification": "2"},
+
+{"tittle": "Alice in Wonderland",
+"image": "https://lumiere-a.akamaihd.net/v1/images/p_aliceinwonderland_19875_ad409a49.jpeg",
+"creationDate": "25 de junio de 2014",
+"qualification": "4"},
+
+]

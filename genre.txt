@@ -1,0 +1,22 @@
+[
+{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+"name": "Comedy"
+},
+{"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+"name": "Cartoon film"
+},
+{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+"name": "Fantasy"
+},
+{"image": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-08-08-musical-shutterstock-860x573.jpg",
+"name": "Musical"
+},
+{"image": "https://www.filmsite.org/images/documentary-genre.jpg",
+"name": "Documentary film"
+},
+{"image": "https://ih1.redbubble.net/image.656309849.0834/st,small,845x845-pad,1000x1000,f8f8f8.jpg",
+"name": "Drama"
+},
+{"image": "https://pbs.twimg.com/media/EgwuubaWsAEKo3b.jpg",
+"name": "Romantic comedy"
+}]
