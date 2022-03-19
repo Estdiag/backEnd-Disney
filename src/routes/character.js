@@ -66,4 +66,53 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.put("/", async (req, res) => {
+  const { id, image, name, age, width, history } = req.body;
+  try {
+    await Character.update(
+      {
+        name: name && name,
+        image: image && image,
+        age: age && age,
+        width: width && width,
+        history: history && history,
+      },
+      {
+        where: { id: id },
+      }
+    );
+    res.status(201).send("update success");
+  } catch (err) {
+    res.status(404).send(err);
+  }
+});
+
+router.delete("/", async (req, res) => {
+  await Character.destroy({
+    where: { id: req.body.id },
+  });
+  res.status(201).send("delete success");
+});
+
+router.get("/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const character = await Character.findByPk(id, {
+      include: {
+        model: Movie,
+        attributes: [
+          "id",
+          "title",
+          "creationDate",
+          "qualification",
+          "GenreName",
+        ],
+      },
+    });
+    res.status(201).send(character);
+  } catch (err) {
+    res.status(401).send(err);
+  }
+});
+
 module.exports = router;

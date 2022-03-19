@@ -4,10 +4,16 @@ class Genre extends Model {}
 const initGenre = (sequelize) => {
   Genre.init(
     {
+      id: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+      },
+
       name: {
         type: DataTypes.STRING,
         allowNull: false,
-        primaryKey: true,
+
         set(value) {
           let value1 = value.toLowerCase();
           this.setDataValue("name", value1);
@@ -22,6 +28,7 @@ const initGenre = (sequelize) => {
       sequelize,
       modelName: "Genre",
       tableName: "Genres",
+      timestamps: false,
     }
   );
 };
