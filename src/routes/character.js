@@ -16,43 +16,34 @@ router.post("/", async (req, res) => {
       let movie = await Movie.findAll({
         where: {
           title: m.title,
+          creationDate: m.creationDate,
         },
       });
 
       if (movie.length == 0) {
-        let newMovie = newCharacter.setMovies(
-          await Movie.create({
-            title: m.title,
-            image: m.image,
-            creationDate: m.creationDate,
-            qualification: m.qualification,
-          })
-        );
-        console.log(newMovie);
+        let newMovie = await Movie.create({
+          title: m.title,
+          image: m.image,
+          creationDate: m.creationDate,
+          qualification: m.qualification,
+        });
+
+        await newCharacter.setMovies(newMovie);
+
+        m.genres.forEach(async (g) => {
+          let genre = await Genre.findOrCreate({
+            where: {
+              name: g.name,
+            },
+            defaults: { name: g.name, image: g.image },
+          });
+
+          await newMovie.setGenre(genre[0]);
+        });
       } else {
-        newCharacter.setMovies(movie);
+        await newCharacter.setMovies(movie);
       }
     });
-
-    // movies.forEach((m) => {
-    //   m.genres.forEach(async (g) => {
-    //     let genre = await Genre.findAll({
-    //       where: {
-    //         name: g.name,
-    //       },
-    //     });
-    //     if (genre.length == 0) {
-    //       m.createGenre(
-    //         await Genre.create({
-    //           name: g.name,
-    //           image: g.image,
-    //         })
-    //       );
-    //     } else {
-    //       m.createGenre(genre);
-    //     }
-    //   });
-    // });
 
     res.status(201).send("creado correctamente");
   } catch (err) {
