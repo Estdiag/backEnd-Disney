@@ -37,4 +37,29 @@ router.delete("/", async (req, res) => {
     res.status(404).send(err);
   }
 });
+router.put("/", async (req, res) => {
+  const { id, name, image } = req.body;
+  try {
+    await Genre.update(
+      { name: name, image: image },
+      {
+        where: {
+          id: id,
+        },
+      }
+    );
+    res.status(201).send("update success");
+  } catch (err) {
+    res.status(404).send(err);
+  }
+});
+router.get("/:id", async (req, res) => {
+  const { id } = req.params;
+  try {
+    const genre = await Genre.findByPk(id);
+    res.status(201).send(genre);
+  } catch (err) {
+    res.status(404).send(err);
+  }
+});
 module.exports = router;

@@ -39,10 +39,6 @@ let capsEntries = entries.map((entry) => [
 ]);
 sequelize.models = Object.fromEntries(capsEntries);
 
-// modelCharacter(sequelize);
-// modelGenre(sequelize);
-// modelMovie(sequelize);
-
 const { Character, Genre, Movie } = sequelize.models;
 
 Character.belongsToMany(Movie, { through: "movie-character" });

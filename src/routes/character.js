@@ -20,13 +20,17 @@ router.get("/", async (req, res) => {
 router.post("/", async (req, res) => {
   const { image, name, age, width, history, movies } = req.body;
   try {
-    let newCharacter = await Character.create({
-      image,
-      name,
-      age,
-      width,
-      history,
+    let newCharacter = await Character.findOrCreate({
+      where: { name: name },
+      defaults: {
+        image,
+        name,
+        age,
+        width,
+        history,
+      },
     });
+
     movies.forEach(async (m) => {
       let movie = await Movie.findAll({
         where: {
@@ -43,7 +47,7 @@ router.post("/", async (req, res) => {
           qualification: m.qualification,
         });
 
-        await newCharacter.setMovies(newMovie);
+        await newCharacter[0].setMovies(newMovie);
 
         m.genres.forEach(async (g) => {
           let genre = await Genre.findOrCreate({
@@ -56,7 +60,7 @@ router.post("/", async (req, res) => {
           await newMovie.setGenre(genre[0]);
         });
       } else {
-        await newCharacter.setMovies(movie);
+        await newCharacter.createMovie(movie[0]);
       }
     });
 

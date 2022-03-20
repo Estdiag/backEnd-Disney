@@ -27,6 +27,7 @@ const initMovie = (sequelize) => {
       sequelize,
       modelName: "Movie",
       tableName: "Movies",
+      timestamps: false,
     }
   );
 };

@@ -36,6 +36,7 @@ const initCharacter = (sequelize) => {
       sequelize,
       modelName: "Character",
       tableName: "Characters",
+      timestamps: false,
     }
   );
 };
