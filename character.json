@@ -3,30 +3,64 @@
 	"width": 55,
 	"history": "Abby es una adolescente que espera cumplir su dulces 16 años para crecer y obtener privacidad, y tiene desde que era pequeña una lista con los 16 deseos que quiere que se cumplan ese día. Cuando llega el día, las cosas empiezan a salir mal, hasta que conoce a una singular mujer llamada Celeste, que le da una una caja con 16 velas, cuando enciende una de las velas y sopla, se hace realidad uno de los 16 deseos de su lista, y descubre que cada vela corresponde con los números de su lista de deseos, y entonces los deseos que ha estado planeando desde que era pequeña se hacen realidad.",
 	
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/55/Abby.jpg/revision/latest/scale-to-width-down/332?cb=20161022141434&path-prefix=es",
-      "tvShows": [
-            "16 Wishes"
-          ]
+      "image": "https://static.wikia.nocookie.net/disney/images/5/55/Abby.jpg/revision/latest/scale-to-width-down/332?cb=20161022141434&path-prefix=es",
+      "movies": [{"title": "16 Wishes",
+            "image": "https://m.media-amazon.com/images/I/91G1bTiKbyL._SY550_.jpg",
+            "creationDate": "1999-10-25",
+            "qualification": "4", 
+            "genres": [{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                  "name": "Comedy"
+                  },
+                  {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+                  "name": "Cartoon film"
+                  }]}
            
+      ]  
     },
 
 {     "name": "Aladdin",
 	"age": 20,
 	"width": 60,
 	"history": "Aladdin es el valiente protagonista de la película Aladdin. Es también el héroe de Return of Jafar, Aladdin and the King of Thieves y Aladdin (the series)." ,
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/85/Aladdin_%28personaje%29.png/revision/latest/scale-to-width-down/280?cb=20160318010334&path-prefix=es",
-      "tvShows": [
-            "Aladdin",
-    "The Return of Jafar",
-    "Aladdin and the King of Thieves",
-    "Disney Sing-Along Songs",
-    "Mickey's Magical Christmas",
-    "Mickey's House of Villains",
-    "The Lion King 1½",
-    "Once Upon a Halloween",
-    "Aladdin (the series)",
-    "Hercules (the series)",
-    "House of Mouse"
+      "image": "https://static.wikia.nocookie.net/disney/images/8/85/Aladdin_%28personaje%29.png/revision/latest/scale-to-width-down/280?cb=20160318010334&path-prefix=es",
+      "movies": [
+            {"title":  "Aladdin",
+                  "image": "https://static.wikia.nocookie.net/doblaje/images/2/2f/Aladdin_Animated_Series_DVD.jpg/revision/latest/top-crop/width/360/height/450?cb=20201004165029&path-prefix=es",
+               "creationDate": "1992-11-25",
+           "qualification": "3", 
+      "genres":[{"image": "https://ih1.redbubble.net/image.656309849.0834/st,small,845x845-pad,1000x1000,f8f8f8.jpg",
+            "name": "Drama"
+            }]},
+
+    {"title": "The Return of Jafar",
+"image": "https://m.media-amazon.com/images/I/514PYP1K0JL._AC_SY445_.jpg",
+    "creationDate": "May 20, 1994",
+"qualification": "4",
+"genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+      "name": "Fantasy"
+      },
+      {"image": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-08-08-musical-shutterstock-860x573.jpg",
+      "name": "Musical"
+      }]},
+
+{"title": "Aladdin and the King of Thieves",
+      "image": "https://m.media-amazon.com/images/I/51bP-8ryAiL._SY445_.jpg",
+      "creationDate": "1999-01-08",
+      "qualification": "5", "genres":[{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+            "name": "Comedy"
+            },
+            {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+            "name": "Cartoon film"
+            }]},
+      {"title": "House of Mouse",
+            "image": "https://www.revistaestilo.net/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=_eYjUvjGcNRvS4sHlx46Bc$daE2N3K4ZzOUsqbU5sYuXkWgP7nJpbSOzy_bHtYCo6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&CONTENTTYPE=image/jpeg",
+            "creationDate": "2002-06-08",
+            "qualification": "3", 
+      "genres": [{"image": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-08-08-musical-shutterstock-860x573.jpg",
+            "name": "Musical"
+            }]}
+      
+    
           ]
       
       
@@ -36,18 +70,36 @@
 	"age": 2,
 	"width": 5,
 	"history": "Es un travieso monito ladronzuelo que tiene el honor de ser el mejor amigo de Aladdín, además del Genio y Jasmín. Aunque sea un mono y no hable, parlotea de manera que se le entiende." ,
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/b7/Ab%C3%BA.png/revision/latest/scale-to-width-down/311?cb=20130925165725&path-prefix=es",
-      "tvShows": [
-            "Aladdin",
-    "The Return of Jafar",
-    "Aladdin and the King of Thieves",
-    "Disney Sing-Along Songs",
-    "Mickey's Magical Christmas",
-    "Aladdin (the series)",    
-    "House of Mouse"
+      "image": "https://static.wikia.nocookie.net/disney/images/b/b7/Ab%C3%BA.png/revision/latest/scale-to-width-down/311?cb=20130925165725&path-prefix=es",
+      "movies": [
+            {"title":  "Aladdin",
+                  "image": "https://static.wikia.nocookie.net/doblaje/images/2/2f/Aladdin_Animated_Series_DVD.jpg/revision/latest/top-crop/width/360/height/450?cb=20201004165029&path-prefix=es",
+               "creationDate": "1992-11-25",
+           "qualification": "3", 
+      "genres":[{"image": "https://ih1.redbubble.net/image.656309849.0834/st,small,845x845-pad,1000x1000,f8f8f8.jpg",
+            "name": "Drama"
+            }]},
+            {"title": "The Return of Jafar",
+                  "image": "https://m.media-amazon.com/images/I/514PYP1K0JL._AC_SY445_.jpg",
+                      "creationDate": "May 20, 1994",
+                  "qualification": "4",
+                  "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                        "name": "Fantasy"
+                        },
+                        {"image": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-08-08-musical-shutterstock-860x573.jpg",
+                        "name": "Musical"
+                        }]},
+                        {"title": "Aladdin and the King of Thieves",
+                              "image": "https://m.media-amazon.com/images/I/51bP-8ryAiL._SY445_.jpg",
+                              "creationDate": "1999-01-08",
+                              "qualification": "5", "genres":[{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                                    "name": "Comedy"
+                                    },
+                                    {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+                                    "name": "Cartoon film"
+                                    }]}   
           ]
-      
-      
+            
     },
 
 
@@ -55,10 +107,27 @@
 	"age": 2,
 	"width": 5,
 	"history": "Es la emoción de alegría de Riley. Junto con las demás emociones, controla el estado de ánimo de Riley. Ella hace que Riley esté feliz y le encanta hacer payasadas." ,
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/96/Alegr%C3%ADa_InsideOut.png/revision/latest/scale-to-width-down/326?cb=20160114152206&path-prefix=es",
-      "tvShows": [
-            "Inside Out",
-            "Riley's First Date?"
+      "image": "https://static.wikia.nocookie.net/disney/images/9/96/Alegr%C3%ADa_InsideOut.png/revision/latest/scale-to-width-down/326?cb=20160114152206&path-prefix=es",
+      "movies": [
+            {"title": "Inside Out",
+                  "image": "https://www.melomanodigital.com/wp-content/uploads/2020/11/CINE-267-INSIDE-OUT-1-scaled.jpg",
+                  "creationDate": "2008-06-12",
+                  "qualification": "5",
+            "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                  "name": "Fantasy"
+                  }, {"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                        "name": "Comedy"
+                        }]},
+
+                  {"title": "Riley's first date?",
+                        "image": "https://m.media-amazon.com/images/M/MV5BMDZlY2M3NDItMmMzZC00NDhlLThiMGItYjIwMWMxZjdiMWU1XkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_.jpg",
+                        "creationDate": "2015-12-12",
+                        "qualification": "2",
+                        "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                              "name": "Fantasy"
+                              }, {"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                                    "name": "Comedy"
+                                    }]}
                   ]
       
       
@@ -69,12 +138,38 @@
 	"age": 12,
 	"width": 34,
 	"history": "Alicia es una niña de buena familia que sueña con vivir en un mundo en el que todo fuera un disparate. Cuando ve pasar al Conejo Blanco, ella le sigue hasta el País de las Maravillas, donde hay cosas, lugares y personajes de lo más extraño Tras pasar un día de locos en ese extraño mundo, Alicia quiere volver a casa, por lo que le pide ayuda al Gato Risón, quien la lleva a ver a la Reina de Corazones. Ésta, tras enfurecerse, manda a todas sus tropas a por Alicia. La persecución termina llevando a Alicia ante el Sr. Picaporte, quien hace ver a Alicia que está durmiendo. Y al final, Alicia se despierta, volviendo de nuevo a su mundo." ,
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/11/Alicia.png/revision/latest/scale-to-width-down/283?cb=20130906083737&path-prefix=es",
-       "tvShows": [
-"Alice in Wonderland",
-"Mickey's Magical Christmas",
-"Mickey's House of Villains",
-"Once Upon a Halloween"
+      "image": "https://static.wikia.nocookie.net/disney/images/1/11/Alicia.png/revision/latest/scale-to-width-down/283?cb=20130906083737&path-prefix=es",
+       "movies": [
+            {"title": "Alice in Wonderland",
+                  "image": "https://lumiere-a.akamaihd.net/v1/images/p_aliceinwonderland_19875_ad409a49.jpeg",
+                  "creationDate": "2014-06-12",
+                  "qualification": "4",
+            "genres": [{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                  "name": "Comedy"
+                  },
+                  {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+                  "name": "Cartoon film"
+                  },
+                  {"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                  "name": "Fantasy"
+                  }]},
+
+      {"title": "Mickey's Magical Christmas",
+                        "image": "https://static.wikia.nocookie.net/house-of-mouse/images/a/a0/Mickey%27s_Magical_Christmas.jpg/revision/latest?cb=20140412181103&path-prefix=es",
+                        "creationDate": "2001-20-05",
+                        "qualification": "4",
+                  "genres": [{"image": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-08-08-musical-shutterstock-860x573.jpg",
+                        "name": "Musical"
+                        }]},
+
+      {"title": "Mickey's House of Villains",
+                              "image": "https://pics.filmaffinity.com/Mickey_s_House_of_Villains-987545085-large.jpg",
+                              "creationDate": "1998-02-15",
+                              "qualification": "2", 
+                        "genres": [{"image": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-08-08-musical-shutterstock-860x573.jpg",
+                              "name": "Musical"
+                              }]}
+
       ]
       
     },
@@ -84,15 +179,17 @@
 	"age": 22,
 	"width": 45,
 	"history": "Ariel es la protagonista de la película The Little Mermaid. También apareció en The Little Mermaid II: Return to the Sea y en la película The Little Mermaid: Ariel's Beginning, y en la serie The Little Mermaid (the series).Es la séptima y más joven hija del rey Tritón, gobernante del reino submarino de Atlantica. Vivió gran parte de su vida joven con una admiración de largo plazo, pero prohibida, hacia el mundo humano, y anhelaba algún día experimentar la vida en la superficie. Ariel se basa en el protagonista sin nombre del cuento de hadas danés de Hans Christian Andersen 'La Sirenita', pero no tiene un final melancólico como en el cuento de Andersen. Ariel es el cuarto miembro oficial de la línea de Disney Princess.",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/a/a0/Ariel-1.png/revision/latest/scale-to-width-down/234?cb=20170929163212&path-prefix=es",
-       "tvShows": [
-"The Little Mermaid",
-"The Little Mermaid II: Return to the Sea",
-"The Little Mermaid: Ariel's Beginning",
-"A Goofy Movie (cameo)",
-"Mickey's Magical Christmas: Snowed in at the House of Mouse"
-
-      ]
+      "image": "https://static.wikia.nocookie.net/disney/images/a/a0/Ariel-1.png/revision/latest/scale-to-width-down/234?cb=20170929163212&path-prefix=es",
+       "movies": [
+            {"title": "The Little Mermaid",
+                  "image": "https://static.wikia.nocookie.net/disneyypixar/images/b/b7/The_Little_Mermaid_Poster.jpg/revision/latest?cb=20200803001021&path-prefix=es",
+                  "creationDate": "1999-9-4",
+                  "qualification": "5",
+                  "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                        "name": "Fantasy"
+                        }, {"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                              "name": "Comedy"
+                              }]}      ]
       
     },
 
@@ -100,13 +197,27 @@
 	"age": 28,
 	"width": 55,
 	"history": "Aurora nace princesa, y las tres hadas Flora, Fauna y Primavera les da un don cada una. Flora le da el don de la belleza, Fauna le da el don de una melodiosa voz. Luego aparece la malvada hechicera Maléfica y le lanza un hechizo a Aurora, al cumplir los 16 años antes de que el sol se ponga, se pinchará el dedo con el uso de una rueca, y morirá. Pero Primavera hace que cuando se pinche con el uso de una rueca no muera, solo se dormirá hasta el primer beso de amor. Las hadas se la llevan a la Cabaña del Leñador, la que está abandonada, en el bosque hasta que cumpliera dieciseis años para que Maléfica no la encuentre, ya la cambian el nombre por el de Rosa. Un día mientras está por el bosque se encuentra al Príncipe Felipe y ambos se enamoran, sin saber sus nombres, al haber pasado tanto tiempo y ser una campesina, Felipe no la reconoce y como Aurora desconoce que es la princesa Aurora, el amor de Felipe con una campesina, deja sorprendido a su padre.Al cumplir los dieciseis años las hadas llevan a Aurora al castillo de sus padres, el Rey Stéfano y la Reina Leah. Allí Maléfica está esperando a Aurora para que se pinche, y en lo más alto de la torre más alta la Princesa se pinchó el dedo con una rueca creada por Maléfica.Las Tres Hadas van a rescatar al Príncipe Felipe que lo tiene secuestrado Maléfica, y lo liberan.Finalmente, Felipe le da un beso a Aurora y se despierta. Los dos enamorados bajan al salón del castillo junto con sus padres, resolviendo el problema de la campesina de la que Felipe se enamoró, y que resultó ser la persona con la que estaba comprometido y debía casarse.",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/89/Aurora.png/revision/latest/scale-to-width-down/330?cb=20120926112456&path-prefix=es",
-       "tvShows": [
-"Sleeping Beauty",
-"Keys to the Kingdom",
-"Disney Sing-Along Songs",
-"Mickey's Magical Christmas",
-"Mickey's House of Villains"
+      "image": "https://static.wikia.nocookie.net/disney/images/8/89/Aurora.png/revision/latest/scale-to-width-down/330?cb=20120926112456&path-prefix=es",
+       "movies": [
+            {"title": "The Little Mermaid",
+                  "image": "https://static.wikia.nocookie.net/disneyypixar/images/b/b7/The_Little_Mermaid_Poster.jpg/revision/latest?cb=20200803001021&path-prefix=es",
+                  "creationDate": "1999-9-4",
+                  "qualification": "5",
+                  "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                        "name": "Fantasy"
+                        }, {"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                              "name": "Comedy"
+                              }]} ,
+
+                              {"title": "Sleeping Beauty",
+                                    "image": "https://www.encadenados.org/rdc/images/stories/todo_demas/num_104/la-bella-durmiente-0.jpg",
+                                    "creationDate": "1994-2-2",
+                                    "qualification": "4",
+                                    "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                                          "name": "Fantasy"
+                                          }]} 
+
+
       ]
       
     },
@@ -115,9 +226,17 @@
 	"age": 7,
 	"width": 12,
 	"history": "Olie Polie es el protagonista de la serie Rolie Polie Olie. Él es muy amable, curioso, y ama a su familia y amigos.",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/9d/OliePolie.png/revision/latest/scale-to-width-down/180?cb=20130420174905&path-prefix=es",
-       "tvShows": [
-"Rolie Polie Olie."
+      "image": "https://static.wikia.nocookie.net/disney/images/9/9d/OliePolie.png/revision/latest/scale-to-width-down/180?cb=20130420174905&path-prefix=es",
+       "movies": [
+            {"title": "Riley's first date?",
+                  "image": "https://m.media-amazon.com/images/M/MV5BMDZlY2M3NDItMmMzZC00NDhlLThiMGItYjIwMWMxZjdiMWU1XkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_.jpg",
+                  "creationDate": "2015-12-12",
+                  "qualification": "2",
+                  "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                        "name": "Fantasy"
+                        }, {"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                              "name": "Comedy"
+                              }]}
       ]
       
     },
@@ -126,9 +245,22 @@
 	"age": 7,
 	"width": 5,
 	"history": "Oscar es un adolescente nervioso e inquieto, y se preocupa demasiado por todo. Le chiflan las fantasías de ciencia ficción. Aún así sabe cómo pasárselo bien, sobre todo con sus videojuegos. Comparte pecera con su hermano Milo, un chico muy fiestero. Está secretamente enamorado de Bea, la vecina de al lado y la mejor amiga de Milo y Oscar. Perlita está loca por él, pero él no la soporta. Junto con Milo y Bea, se enfrenta al instituto, con sus peligros y sorpresas acechando en cada pecera.",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/4/4e/Oscar-Pecezuelos.png/revision/latest/scale-to-width-down/230?cb=20110330181428&path-prefix=es",
-       "tvShows": [
-"Fish Hooks"
+      "image": "https://static.wikia.nocookie.net/disney/images/4/4e/Oscar-Pecezuelos.png/revision/latest/scale-to-width-down/230?cb=20110330181428&path-prefix=es",
+       "movies": [
+            {"title": "Alice in Wonderland",
+                  "image": "https://lumiere-a.akamaihd.net/v1/images/p_aliceinwonderland_19875_ad409a49.jpeg",
+                  "creationDate": "2014-6-12",
+                  "qualification": "4",
+            "genres": [{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                  "name": "Comedy"
+                  },
+                  {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+                  "name": "Cartoon film"
+                  },
+                  {"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                  "name": "Fantasy"
+                  }]}
+
       ]
       
     },
@@ -138,9 +270,25 @@
 	"age": 30,
 	"width": 76,
 	"history": "Dave es un enorme y musculoso bárbaro guerrero y príncipe de Udrogoth. Es el mediano de los tres hermanos de la Familia Bárbara. Le gusta tejer, cocinar y limpiar (lo cual es muy inusual para un bárbaro). Él tiene miedo de un montón de cosas, y grita mucho. Al menos una vez en cada episodio, se asusta de alguna manera y suelta un grito agudo. Dave es físicamente poderoso, con gran fuerza. Es capaz de leer una revista mientras que hace flexiones de pecho con una mano llevando muchas cosas en su espalda, destruir una pirámide con una sola patada, y de recorrer todo el mundo en pocos minutos mientras que huye de miedo.",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/56/DaveElB%C3%A1rbaro.png/revision/latest/scale-to-width-down/324?cb=20140304105811&path-prefix=es",
-       "tvShows": [
-"Dave the Barbarian"
+      "image": "https://static.wikia.nocookie.net/disney/images/5/56/DaveElB%C3%A1rbaro.png/revision/latest/scale-to-width-down/324?cb=20140304105811&path-prefix=es",
+       "movies": [
+            {"title": "Aladdin and the King of Thieves",
+                  "image": "https://m.media-amazon.com/images/I/51bP-8ryAiL._SY445_.jpg",
+                  "creationDate": "1999-1-8",
+                  "qualification": "5", "genres":[{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                        "name": "Comedy"
+                        },
+                        {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+                        "name": "Cartoon film"
+                        }]},{"title": "Dave the Barbarian",
+                              "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/3711/673711-h",
+                              "creationDate": "2000-2-14",
+                              "qualification": "5", "genres":[{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                                    "name": "Comedy"
+                                    },
+                                    {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+                                    "name": "Cartoon film"
+                                    }]}
       ]
       
     },
@@ -150,9 +298,18 @@
 	"age": 7,
 	"width": 25,
 	"history": "Es la más joven de los tres hermanos de la familia real de Udrogoth, y también la más bárbara. Fang es apodada por los bichos con el nombre de 'El Gran Destructor', ya que a ella le encanta pisotearlos. Se la confunde a menudo con un mono, y eso hace que grite: '¡no soy mono!' Ella es demasiado pequeña para luchar contra monstruos, así que se encarga de entrenar a su hermano Dave, que es muy fuerte, para combertirle en un bárbaro de verdad, pero Dave es muy cobarde y tiene hobbies que no son propios de un bárbaro. Fang también tiene sus percances, pues al igual que a su tío Oswidge, secretamente le gusta jugar con muñecas, pero no quiere que la gente lo sepa." ,
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/9a/Fang2.png/revision/latest/scale-to-width-down/237?cb=20120226212659&path-prefix=es",
-       "tvShows": [
-"Dave the Barbarian"
+      "image": "https://static.wikia.nocookie.net/disney/images/9/9a/Fang2.png/revision/latest/scale-to-width-down/237?cb=20120226212659&path-prefix=es",
+       "movies": [
+            {"title": "Dave the Barbarian",
+                  "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/3711/673711-h",
+                  "creationDate": "2000-2-14",
+                  "qualification": "5", "genres":[{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                        "name": "Comedy"
+                        },
+                        {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+                        "name": "Cartoon film"
+                        }]}
+
       ]
     }
 ]

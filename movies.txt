@@ -1,52 +1,109 @@
 [
-  {"tittle":  "Aladdin",
-       "image": "https://static.wikia.nocookie.net/doblaje/images/2/2f/Aladdin_Animated_Series_DVD.jpg/revision/latest/top-crop/width/360/height/450?cb=20201004165029&path-prefix=es",
-    "creationDate": 25 de noviembre de 1992,
-"qualification": "3"},
+  {"title":  "Aladdin",
+                  "image": "https://static.wikia.nocookie.net/doblaje/images/2/2f/Aladdin_Animated_Series_DVD.jpg/revision/latest/top-crop/width/360/height/450?cb=20201004165029&path-prefix=es",
+               "creationDate": "1992-11-25",
+           "qualification": "3", 
+      "genres":[{"image": "https://ih1.redbubble.net/image.656309849.0834/st,small,845x845-pad,1000x1000,f8f8f8.jpg",
+            "name": "Drama"
+            }]},
 
-{"tittle": "The Return of Jafar",
-"image": "https://m.media-amazon.com/images/I/514PYP1K0JL._AC_SY445_.jpg",
-    "creationDate": "May 20, 1994",
-"qualification": "4"},
+{"title": "The Return of Jafar",
+                  "image": "https://m.media-amazon.com/images/I/514PYP1K0JL._AC_SY445_.jpg",
+                      "creationDate": "May 20, 1994",
+                  "qualification": "4",
+                  "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                        "name": "Fantasy"
+                        },
+                        {"image": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-08-08-musical-shutterstock-860x573.jpg",
+                        "name": "Musical"
+                        }]}
 
-{"tittle": "Aladdin and the King of Thieves",
-"image": "https://m.media-amazon.com/images/I/51bP-8ryAiL._SY445_.jpg",
-"creationDate": "08 de enero de 1999",
-"qualification": "5"},
+{"title": "Aladdin and the King of Thieves",
+                              "image": "https://m.media-amazon.com/images/I/51bP-8ryAiL._SY445_.jpg",
+                              "creationDate": "1999-01-08",
+                              "qualification": "5", "genres":[{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                                    "name": "Comedy"
+                                    },
+                                    {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+                                    "name": "Cartoon film"
+                                    }]}
 
-{"tittle": "Mickey's Magical Christmas",
-"image": "https://static.wikia.nocookie.net/house-of-mouse/images/a/a0/Mickey%27s_Magical_Christmas.jpg/revision/latest?cb=20140412181103&path-prefix=es",
-"creationDate": "20 de mayo de 2001",
-"qualification": "4"},
+{"title": "Mickey's Magical Christmas",
+                        "image": "https://static.wikia.nocookie.net/house-of-mouse/images/a/a0/Mickey%27s_Magical_Christmas.jpg/revision/latest?cb=20140412181103&path-prefix=es",
+                        "creationDate": "2001-20-05",
+                        "qualification": "4",
+                  "genres": [{"image": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-08-08-musical-shutterstock-860x573.jpg",
+                        "name": "Musical"
+                        }]},
 
-{"tittle": "Mickey's House of Villains",
-"image": "https://pics.filmaffinity.com/Mickey_s_House_of_Villains-987545085-large.jpg",
-"creationDate": "15 de febrero de 1998",
-"qualification": "2"},
+{"title": "Mickey's House of Villains",
+                              "image": "https://pics.filmaffinity.com/Mickey_s_House_of_Villains-987545085-large.jpg",
+                              "creationDate": "1998-02-15",
+                              "qualification": "2", 
+                        "genres": [{"image": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-08-08-musical-shutterstock-860x573.jpg",
+                              "name": "Musical"
+                              }]},
 
-{"tittle": "House of Mouse",
-"image": "https://www.revistaestilo.net/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=_eYjUvjGcNRvS4sHlx46Bc$daE2N3K4ZzOUsqbU5sYuXkWgP7nJpbSOzy_bHtYCo6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&CONTENTTYPE=image/jpeg",
-"creationDate": "04 de noviembre de 2002",
-"qualification": "3"},
+{"title": "House of Mouse",
+            "image": "https://www.revistaestilo.net/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=_eYjUvjGcNRvS4sHlx46Bc$daE2N3K4ZzOUsqbU5sYuXkWgP7nJpbSOzy_bHtYCo6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&CONTENTTYPE=image/jpeg",
+            "creationDate": "2002-06-08",
+            "qualification": "3", 
+      "genres": [{"image": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-08-08-musical-shutterstock-860x573.jpg",
+            "name": "Musical"
+            }]},
 
-{"tittle": "16 Wishes",
-"image": "https://m.media-amazon.com/images/I/91G1bTiKbyL._SY550_.jpg",
-"creationDate": "16 de septiembre de 2003",
-"qualification": "4"},
+{"title": "16 Wishes",
+            "image": "https://m.media-amazon.com/images/I/91G1bTiKbyL._SY550_.jpg",
+            "creationDate": "1999-10-25",
+            "qualification": "4", 
+            "genres": [{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                  "name": "Comedy"
+                  },
+                  {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+                  "name": "Cartoon film"
+                  }]},
 
-{"tittle": "Inside Out",
-"image": "https://www.melomanodigital.com/wp-content/uploads/2020/11/CINE-267-INSIDE-OUT-1-scaled.jpg",
-"creationDate": "12 de julio de 2014",
-"qualification": "5"},
+  {"title": "Inside Out",
+                  "image": "https://www.melomanodigital.com/wp-content/uploads/2020/11/CINE-267-INSIDE-OUT-1-scaled.jpg",
+                  "creationDate": "2008-06-12",
+                  "qualification": "5",
+            "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                  "name": "Fantasy"
+                  }, {"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                        "name": "Comedy"
+                        }]},
 
-{"tittle": "Riley's first date?",
-"image": "https://m.media-amazon.com/images/M/MV5BMDZlY2M3NDItMmMzZC00NDhlLThiMGItYjIwMWMxZjdiMWU1XkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_.jpg",
-"creationDate": "12 de diciembre de 2015",
-"qualification": "2"},
+{"title": "Riley's first date?",
+                        "image": "https://m.media-amazon.com/images/M/MV5BMDZlY2M3NDItMmMzZC00NDhlLThiMGItYjIwMWMxZjdiMWU1XkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_.jpg",
+                        "creationDate": "2015-12-12",
+                        "qualification": "2",
+                        "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                              "name": "Fantasy"
+                              }, {"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                                    "name": "Comedy"
+                                    }]}
 
-{"tittle": "Alice in Wonderland",
-"image": "https://lumiere-a.akamaihd.net/v1/images/p_aliceinwonderland_19875_ad409a49.jpeg",
-"creationDate": "25 de junio de 2014",
-"qualification": "4"},
+{"title": "Alice in Wonderland",
+                  "image": "https://lumiere-a.akamaihd.net/v1/images/p_aliceinwonderland_19875_ad409a49.jpeg",
+                  "creationDate": "2014-06-12",
+                  "qualification": "4",
+            "genres": [{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                  "name": "Comedy"
+                  },
+                  {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+                  "name": "Cartoon film"
+                  },
+                  {"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
+                  "name": "Fantasy"
+                  }]},
+                  {"title": "Dave the Barbarian",
+                  "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/3711/673711-h",
+                  "creationDate": "2000-02-14",
+                  "qualification": "5", "genres":[{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
+                        "name": "Comedy"
+                        },
+                        {"image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65a65d5c-b4f6-4e4b-817e-9011e62928e1/ddowsm4-1adcee38-324d-43e0-8dc7-827975d0b1e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1YTY1ZDVjLWI0ZjYtNGU0Yi04MTdlLTkwMTFlNjI5MjhlMVwvZGRvd3NtNC0xYWRjZWUzOC0zMjRkLTQzZTAtOGRjNy04Mjc5NzVkMGIxZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G44tn6YjfEQ6riV2O5zPtuFpzZX8wZ7SdLqEODlIfOI",
+                        "name": "Cartoon film"
+                        }]}
 
 ]

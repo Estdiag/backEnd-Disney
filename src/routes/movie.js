@@ -24,7 +24,7 @@ router.post("/", async (req, res) => {
       });
 
       await movie[0].setGenre(genre[0]);
-      res.status(201).send("created");
+      res.status(201).send("successfully created");
     });
   } catch (err) {
     res.status(404).send(err);
@@ -40,4 +40,34 @@ router.get("/", async (req, res) => {
     res.status(401).send(err);
   }
 });
+
+router.put("/", async (req, res) => {
+  const { id, title, image, creationDate, qualification } = req.body;
+  try {
+    await Movie.update(
+      {
+        title: title || title,
+        image: image || image,
+        creationDate: creationDate || creationDate,
+        qualification: qualification || qualification,
+      },
+      {
+        where: {
+          id: id,
+        },
+      }
+    );
+    res.status(201).send("successfully edited");
+  } catch (err) {
+    res.status(404).send(err);
+  }
+});
+
+router.delete("/", async (req, res) => {
+  await Movie.destroy({
+    where: { id: req.body.id },
+  });
+  res.status(201).send("successfully removed");
+});
+
 module.exports = router;

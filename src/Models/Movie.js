@@ -13,7 +13,7 @@ const initMovie = (sequelize) => {
         },
       },
       image: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
       },
       creationDate: {

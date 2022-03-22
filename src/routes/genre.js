@@ -13,7 +13,7 @@ router.post("/", async (req, res) => {
         name: name,
       },
     });
-    res.status(200).send("created");
+    res.status(200).send("successfully created");
   } catch (err) {
     res.status(404).send(err);
   }
@@ -32,7 +32,7 @@ router.delete("/", async (req, res) => {
 
   try {
     await Genre.destroy({ where: { name: name.toLowerCase() } });
-    res.status(201).send("deleted");
+    res.status(201).send("successfully removed");
   } catch (err) {
     res.status(404).send(err);
   }
@@ -48,7 +48,7 @@ router.put("/", async (req, res) => {
         },
       }
     );
-    res.status(201).send("update success");
+    res.status(201).send("successfully updated");
   } catch (err) {
     res.status(404).send(err);
   }
