@@ -1,22 +1,40 @@
 const { Op } = require("../db");
 
-export function filter(name, age, width, movie) {
+function filter(name, age, width, movie) {
   let condition;
   if (name || age || width || movie) {
     if (name && age && width) {
       condition = {
         where: {
-          [Op.and]: [{ name: name }, { age: age }, { width: width }],
+          [Op.and]: [
+            { name: { [Op.substring]: name.toLowerCase() } },
+            { age: age },
+            { width: width },
+          ],
         },
       };
       return condition;
     }
     if (name && age) {
-      condition = { where: { [Op.and]: [{ name: name }, { age: age }] } };
+      condition = {
+        where: {
+          [Op.and]: [
+            { name: { [Op.substring]: name.toLowerCase() } },
+            { age: age },
+          ],
+        },
+      };
       return condition;
     }
     if (name && width) {
-      condition = { where: { [Op.and]: [{ name: name }, { width: width }] } };
+      condition = {
+        where: {
+          [Op.and]: [
+            { name: { [Op.substring]: name.toLowerCase() } },
+            { width: width },
+          ],
+        },
+      };
       return condition;
     }
     if (age && width) {
@@ -25,7 +43,7 @@ export function filter(name, age, width, movie) {
     }
     if (name) {
       condition = {
-        where: { name: name },
+        where: { name: { [Op.substring]: name.toLowerCase() } },
       };
       return condition;
     }
@@ -44,3 +62,7 @@ export function filter(name, age, width, movie) {
   }
   return {};
 }
+
+module.exports = {
+  filter,
+};

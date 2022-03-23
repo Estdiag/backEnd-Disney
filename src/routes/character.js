@@ -1,14 +1,47 @@
 const { Router } = require("express");
 const { Character, Movie, Genre } = require("../db.js");
 const router = Router();
+const { filter } = require("./functionFilter.js");
 
 router.get("/", async (req, res) => {
-  const { name, age, width } = req.query;
-  if (name) {
+  const { name, age, width, movie } = req.query;
+  const condition = filter(name, age, width, movie);
+  condition.include = {
+    model: Movie,
+    attributes: ["id"],
+    through: {
+      attributes: [],
+    },
+  };
+
+  if (movie) {
+    let characters = await Character.findAll({
+      include: {
+        model: Movie,
+        attributes: ["id"],
+        through: {
+          attributes: [],
+        },
+      },
+    });
+    let character = [];
+    characters?.map((c) =>
+      character.push({
+        image: c.image,
+        name: c.name,
+        movies: c.Movies.map((id) => `${id.id}`),
+      })
+    );
     try {
-      let characters = await Character.findAll({
-        where: { name: { [Op.substring]: name.toLocaleLowerCase() } },
-      });
+      let c = character.filter((e) => e.movies.includes(movie.toLowerCase()));
+
+      res.send(c);
+    } catch (err) {
+      res.send(err);
+    }
+  } else {
+    try {
+      let characters = await Character.findAll(condition);
       let character = [];
       characters?.map((c) =>
         character.push({
@@ -20,16 +53,6 @@ router.get("/", async (req, res) => {
     } catch (err) {
       res.status(404).send(err);
     }
-  } else {
-    let characters = await Character.findAll();
-    let character = [];
-    characters?.map((c) =>
-      character.push({
-        image: c.image,
-        name: c.name,
-      })
-    );
-    res.json(character.length ? character : "nothing found");
   }
 });
 
@@ -37,7 +60,7 @@ router.post("/", async (req, res) => {
   const { image, name, age, width, history, movies } = req.body;
   try {
     let newCharacter = await Character.findOrCreate({
-      where: { name: name.toLocaleLowerCase() },
+      where: { name: name.toLowerCase() },
       defaults: {
         image,
         name,
@@ -50,7 +73,7 @@ router.post("/", async (req, res) => {
     movies.forEach(async (m) => {
       let movie = await Movie.findOrCreate({
         where: {
-          title: m.title.toLocaleLowerCase(),
+          title: m.title.toLowerCase(),
           creationDate: m.creationDate,
         },
         defaults: {
@@ -66,7 +89,7 @@ router.post("/", async (req, res) => {
       m.genres.forEach(async (g) => {
         let genre = await Genre.findOrCreate({
           where: {
-            name: g.name.toLocaleLowerCase(),
+            name: g.name.toLowerCase(),
           },
           defaults: { name: g.name, image: g.image },
         });
@@ -116,16 +139,11 @@ router.delete("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const { id } = req.params;
+
     const character = await Character.findByPk(id, {
       include: {
         model: Movie,
-        attributes: [
-          "id",
-          "title",
-          "creationDate",
-          "qualification",
-          "GenreName",
-        ],
+        attributes: ["title"],
       },
     });
     res.status(201).send(character);
