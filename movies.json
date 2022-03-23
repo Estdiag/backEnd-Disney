@@ -9,7 +9,7 @@
 
 {"title": "The Return of Jafar",
                   "image": "https://m.media-amazon.com/images/I/514PYP1K0JL._AC_SY445_.jpg",
-                      "creationDate": "1994-20-04",
+                      "creationDate": "1994-02-04",
                   "qualification": "4",
                   "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
                         "name": "Fantasy"
@@ -30,7 +30,7 @@
 
 {"title": "Mickey's Magical Christmas",
                         "image": "https://static.wikia.nocookie.net/house-of-mouse/images/a/a0/Mickey%27s_Magical_Christmas.jpg/revision/latest?cb=20140412181103&path-prefix=es",
-                        "creationDate": "2001-20-05",
+                        "creationDate": "2001-08-05",
                         "qualification": "4",
                   "genres": [{"image": "https://www.saturdayeveningpost.com/wp-content/uploads/satevepost/2020-08-08-musical-shutterstock-860x573.jpg",
                         "name": "Musical"
@@ -96,7 +96,9 @@
                   {"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
                   "name": "Fantasy"
                   }]},
-                  {"title": "Dave the Barbarian",
+
+
+{"title": "Dave the Barbarian",
                   "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/3711/673711-h",
                   "creationDate": "2000-02-14",
                   "qualification": "5", "genres":[{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",

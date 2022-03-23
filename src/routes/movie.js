@@ -1,6 +1,7 @@
 const { Router } = require("express");
-const { Movie, Genre, Character } = require("../db.js");
+const { Movie, Genre, Character, Op } = require("../db.js");
 const router = Router();
+const { filterMovie } = require("./functionFilter.js");
 
 router.post("/", async (req, res) => {
   const { title, image, creationDate, qualification, genres } = req.body;
@@ -32,25 +33,37 @@ router.post("/", async (req, res) => {
 });
 
 router.get("/", async (req, res) => {
+  const { title, genre, order } = req.query;
+  const condition = filterMovie(title);
+
+  condition.include = {
+    model: Genre,
+    attributes: ["id", "name"],
+    through: {
+      attributes: [],
+    },
+  };
+
   try {
-    let movies = await Movie.findAll({
-      include: {
-        model: Genre,
-        attributes: ["name"],
-        through: {
-          attributes: [],
-        },
-      },
-    });
+    if (order) {
+      condition.order = [["creationDate", order]];
+    }
+    let movies = await Movie.findAll(condition);
     let movie = [];
-    movies?.map((c) =>
+    movies?.map((m) =>
       movie.push({
-        image: c.image,
-        title: c.title,
-        creationDate: c.creationDate,
+        image: m.image,
+        title: m.title,
+        creationDate: m.creationDate,
+        genres: m.Genres.map((id) => `${id.id}`),
       })
     );
-    res.status(200).send(movie);
+    if (genre) {
+      let m = movie.filter((e) => e.genres.includes(genre));
+      res.status(200).send(m);
+    } else {
+      res.status(200).send(movie);
+    }
   } catch (err) {
     res.status(401).send(err);
   }

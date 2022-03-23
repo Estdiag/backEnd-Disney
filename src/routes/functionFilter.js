@@ -63,6 +63,18 @@ function filter(name, age, width, movie) {
   return {};
 }
 
+function filterMovie(title) {
+  let condition;
+  if (title) {
+    condition = {
+      where: { title: { [Op.substring]: title.toLowerCase() } },
+    };
+    return condition;
+  }
+  return {};
+}
+
 module.exports = {
   filter,
+  filterMovie,
 };

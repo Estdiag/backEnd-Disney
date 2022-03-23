@@ -33,7 +33,7 @@ router.get("/", async (req, res) => {
       })
     );
     try {
-      let c = character.filter((e) => e.movies.includes(movie.toLowerCase()));
+      let c = character.filter((e) => e.movies.includes(movie));
 
       res.send(c);
     } catch (err) {
