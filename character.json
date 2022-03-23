@@ -34,7 +34,7 @@
 
     {"title": "The Return of Jafar",
 "image": "https://m.media-amazon.com/images/I/514PYP1K0JL._AC_SY445_.jpg",
-    "creationDate": "May 20, 1994",
+    "creationDate": "1994-05-20",
 "qualification": "4",
 "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
       "name": "Fantasy"
@@ -81,7 +81,7 @@
             }]},
             {"title": "The Return of Jafar",
                   "image": "https://m.media-amazon.com/images/I/514PYP1K0JL._AC_SY445_.jpg",
-                      "creationDate": "May 20, 1994",
+                      "creationDate": "1994-10-12",
                   "qualification": "4",
                   "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
                         "name": "Fantasy"
@@ -183,7 +183,7 @@
        "movies": [
             {"title": "The Little Mermaid",
                   "image": "https://static.wikia.nocookie.net/disneyypixar/images/b/b7/The_Little_Mermaid_Poster.jpg/revision/latest?cb=20200803001021&path-prefix=es",
-                  "creationDate": "1999-9-4",
+                  "creationDate": "1999-09-05",
                   "qualification": "5",
                   "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
                         "name": "Fantasy"
@@ -201,7 +201,7 @@
        "movies": [
             {"title": "The Little Mermaid",
                   "image": "https://static.wikia.nocookie.net/disneyypixar/images/b/b7/The_Little_Mermaid_Poster.jpg/revision/latest?cb=20200803001021&path-prefix=es",
-                  "creationDate": "1999-9-4",
+                  "creationDate": "1999-09-04",
                   "qualification": "5",
                   "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
                         "name": "Fantasy"
@@ -211,7 +211,7 @@
 
                               {"title": "Sleeping Beauty",
                                     "image": "https://www.encadenados.org/rdc/images/stories/todo_demas/num_104/la-bella-durmiente-0.jpg",
-                                    "creationDate": "1994-2-2",
+                                    "creationDate": "1994-02-02",
                                     "qualification": "4",
                                     "genres": [{"image": "https://blog.kermorvan.fr/wp-content/uploads/2020/01/BnFFantasy.jpg",
                                           "name": "Fantasy"
@@ -249,7 +249,7 @@
        "movies": [
             {"title": "Alice in Wonderland",
                   "image": "https://lumiere-a.akamaihd.net/v1/images/p_aliceinwonderland_19875_ad409a49.jpeg",
-                  "creationDate": "2014-6-12",
+                  "creationDate": "2014-06-12",
                   "qualification": "4",
             "genres": [{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
                   "name": "Comedy"
@@ -274,7 +274,7 @@
        "movies": [
             {"title": "Aladdin and the King of Thieves",
                   "image": "https://m.media-amazon.com/images/I/51bP-8ryAiL._SY445_.jpg",
-                  "creationDate": "1999-1-8",
+                  "creationDate": "1999-01-08",
                   "qualification": "5", "genres":[{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
                         "name": "Comedy"
                         },
@@ -282,7 +282,7 @@
                         "name": "Cartoon film"
                         }]},{"title": "Dave the Barbarian",
                               "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/3711/673711-h",
-                              "creationDate": "2000-2-14",
+                              "creationDate": "2000-02-14",
                               "qualification": "5", "genres":[{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
                                     "name": "Comedy"
                                     },
@@ -302,7 +302,7 @@
        "movies": [
             {"title": "Dave the Barbarian",
                   "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/3711/673711-h",
-                  "creationDate": "2000-2-14",
+                  "creationDate": "2000-02-14",
                   "qualification": "5", "genres":[{"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW9P_BntS8Xx-ZtvRFJtDz6FezqpY8OUy7Q&usqp=CAU",
                         "name": "Comedy"
                         },

@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { Movie, Genre } = require("../db.js");
+const { Movie, Genre, Character } = require("../db.js");
 const router = Router();
 
 router.post("/", async (req, res) => {
@@ -23,13 +23,14 @@ router.post("/", async (req, res) => {
         defaults: { name: g.name, image: g.image },
       });
 
-      await movie[0].setGenre(genre[0]);
-      res.status(201).send("successfully created");
+      await movie[0].setGenres(genre[0]);
     });
+    res.send("successfully created");
   } catch (err) {
     res.status(404).send(err);
   }
 });
+
 router.get("/", async (req, res) => {
   try {
     let movies = await Movie.findAll({
@@ -49,7 +50,7 @@ router.get("/", async (req, res) => {
         creationDate: c.creationDate,
       })
     );
-    res.status(201).send(movie);
+    res.status(200).send(movie);
   } catch (err) {
     res.status(401).send(err);
   }
@@ -72,6 +73,25 @@ router.put("/", async (req, res) => {
       }
     );
     res.status(201).send("successfully edited");
+  } catch (err) {
+    res.status(404).send(err);
+  }
+});
+
+router.get("/:id", async (req, res) => {
+  const { id } = req.params;
+  try {
+    let movie = await Movie.findByPk(id, {
+      include: {
+        model: Character,
+        attributes: ["name"],
+        through: {
+          attributes: [],
+        },
+      },
+    });
+
+    res.send(movie);
   } catch (err) {
     res.status(404).send(err);
   }
