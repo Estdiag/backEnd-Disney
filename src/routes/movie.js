@@ -33,9 +33,23 @@ router.post("/", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     let movies = await Movie.findAll({
-      include: { model: Genre, attributes: ["name"] },
+      include: {
+        model: Genre,
+        attributes: ["name"],
+        through: {
+          attributes: [],
+        },
+      },
     });
-    res.status(201).send(movies);
+    let movie = [];
+    movies?.map((c) =>
+      movie.push({
+        image: c.image,
+        title: c.title,
+        creationDate: c.creationDate,
+      })
+    );
+    res.status(201).send(movie);
   } catch (err) {
     res.status(401).send(err);
   }

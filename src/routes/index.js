@@ -6,8 +6,8 @@ const movieRouter = require("./movie.js");
 
 const router = Router();
 
-router.use("/api/character", characterRouter);
-router.use("/api/genre", genreRouter);
-router.use("/api/movie", movieRouter);
+router.use("/characters", characterRouter);
+router.use("/genres", genreRouter);
+router.use("/movies", movieRouter);
 
 module.exports = router;

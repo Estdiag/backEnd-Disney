@@ -94,7 +94,7 @@ router.post("/", async (req, res) => {
           defaults: { name: g.name, image: g.image },
         });
 
-        await movie[0].setGenre(genre[0]);
+        await movie[0].setGenres(genre[0]);
       });
     });
 
@@ -144,6 +144,9 @@ router.get("/:id", async (req, res) => {
       include: {
         model: Movie,
         attributes: ["title"],
+        through: {
+          attributes: [],
+        },
       },
     });
     res.status(201).send(character);
