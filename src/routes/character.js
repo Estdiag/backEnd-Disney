@@ -1,8 +1,8 @@
 const { Router } = require("express");
 const { Character, Movie, Genre } = require("../db.js");
 const router = Router();
-const { filter } = require("./functionFilter.js");
-const { validateRegister } = require("./functionValidate");
+const { filter } = require("./funcions/functionFilter.js");
+const { validateRegister } = require("./funcions/functionValidate");
 
 router.get("/", async (req, res) => {
   const { name, age, width, movie } = req.query;
