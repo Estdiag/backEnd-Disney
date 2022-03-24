@@ -1,11 +1,11 @@
 # Mundo de Disney BackEnd
 
-Este proyecto es la resolución del challenge de participación en ALKEMY. En este oportunidad las
+Este proyecto es la solución del challenge de participación en ALKEMY. En esta oportunidad las
 tecnologias utilizadas son: NodeJs, Express, Sequelize y Nodemailer
 
 Esta API esta diseñada para:
 
-- Personaje: Agregar, editar, eliminar, ver detalles de un personaje en especifico, filtrar por: nombre, peso y edad, ver listado de todos los personajes.
+- Personaje: Agregar, editar, eliminar, ver detalles de un personaje en especifico, filtrar por: nombre, peso, edad y participación en una pelicula o serie, ver listado de todos los personajes.
 
 - Pelicula o serie: Agregar, editar, eliminar, ver detalles de una pelicula o serie, filtrar por genero y titulo de la pelicula, ordenar de forma ascendente o descendiente
 
