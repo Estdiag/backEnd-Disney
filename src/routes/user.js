@@ -1,6 +1,7 @@
 const { Router } = require("express");
 const { User } = require("../db.js");
 const router = Router();
+const { sendEmail } = require("./functions/sendEmail");
 
 router.post("/register", async (req, res) => {
   const { name, email, password } = req.body;
@@ -14,6 +15,11 @@ router.post("/register", async (req, res) => {
         password: password,
       },
     });
+    const user = await User.findOne({
+      where: { email: email, password: password },
+    });
+    token = user.dataValues.id;
+    sendEmail(email, name, token);
     res.status(200).send("successfully created");
   } catch (err) {
     res.status(404).send(err);

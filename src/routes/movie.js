@@ -1,8 +1,7 @@
 const { Router } = require("express");
 const { Movie, Genre, Character, Op } = require("../db.js");
 const router = Router();
-const { filterMovie } = require("./funcions/functionFilter.js");
-const { validateRegister } = require("./funcions/functionValidate");
+const { validateRegister } = require("./functions/functionValidate");
 
 router.post("/", async (req, res) => {
   const { title, image, creationDate, qualification, genres, token } = req.body;

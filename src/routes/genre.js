@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const { Genre } = require("../db.js");
 const router = Router();
-const { validateRegister } = require("./funcions/functionValidate");
+const { validateRegister } = require("./functions/functionValidate");
 
 router.post("/", async (req, res) => {
   const { image, name, token } = req.body;

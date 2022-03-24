@@ -1,4 +1,4 @@
-const { Op } = require("../db");
+const { Op } = require("../../db");
 
 function filter(name, age, width, movie) {
   let condition;

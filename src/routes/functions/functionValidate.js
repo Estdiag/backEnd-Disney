@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { User } = require("../db.js");
+const { User } = require("../../db");
 
 async function validateRegister(id) {
   try {
