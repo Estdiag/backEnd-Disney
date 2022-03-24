@@ -22,6 +22,7 @@ const sendEmail = (emailTo, nameTo, tokenTo) => {
   const name = nameTo;
   const token = tokenTo;
   const message = `
+<img width=200 height=100 src="https://radiorumba.fm/wp-content/uploads/2018/08/Disney-Castillo-Logo.jpg" alt="logo disney"></img>
 <h3>Hola ${name} 👋,</h3>
 <p>Gracias por unirte a nuestra comunidad, espero sea de tu utilidad 💻</p>
 <p>Puedes usar este token para consumir nuestra API</p>
