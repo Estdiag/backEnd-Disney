@@ -136,13 +136,13 @@ router.get("/:id", async (req, res) => {
 });
 
 router.delete("/", async (req, res) => {
-  const { token } = req.body;
+  const { token, id } = req.body;
   let validate = await validateRegister(token);
 
   if (validate === true) {
     try {
       await Movie.destroy({
-        where: { id: req.body.id },
+        where: { id: id },
       });
       res.status(201).send("successfully removed");
     } catch (err) {
