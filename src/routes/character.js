@@ -86,35 +86,15 @@ router.post("/", async (req, res) => {
           },
         });
 
-        movies.forEach(async (m) => {
-          let movie = await Movie.findOrCreate({
-            where: {
-              title: m.title?.toLowerCase(),
-              creationDate: m.creationDate,
-            },
-            defaults: {
-              title: m.title,
-              image: m.image,
-              creationDate: m.creationDate,
-              qualification: m.qualification,
-            },
+        movies?.forEach(async (m) => {
+          const movie = await Movie.findOne({
+            where: { title: m.toLowerCase() },
           });
-
-          await newCharacter[0].setMovies(movie[0]);
-
-          m.genres.forEach(async (g) => {
-            let genre = await Genre.findOrCreate({
-              where: {
-                name: g.name?.toLowerCase(),
-              },
-              defaults: { name: g.name, image: g.image },
-            });
-
-            await movie[0].setGenres(genre[0]);
-          });
+          if (movie) {
+            await newCharacter[0].setMovies(movie);
+          }
         });
-
-        res.status(201).send("successfully created");
+        return res.status(201).send("successfully created");
       } else {
         res.send("add all params required");
       }
@@ -154,7 +134,7 @@ router.put("/", async (req, res) => {
   }
 });
 
-router.put("/movie_delete", async (req, res) => {
+router.put("/movieDelete", async (req, res) => {
   const { token, idCharacter, idMovie } = req.body;
   let validate = await validateRegister(token);
 
@@ -166,8 +146,8 @@ router.put("/movie_delete", async (req, res) => {
   }
 });
 
-router.put("/movie_add", async (req, res) => {
-  const { idCharacter, title, token, idMovie } = req.body;
+router.put("/movieAdd", async (req, res) => {
+  const { idCharacter, title, token } = req.body;
   let validate = await validateRegister(token);
 
   if (validate === true) {

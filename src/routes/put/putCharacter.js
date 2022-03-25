@@ -1,4 +1,4 @@
-const { Movie, Character } = require("../../db");
+const { Movie, Character, Movie_character } = require("../../db");
 
 const putDeleteMovie = async (idCharacter, idMovie) => {
   try {
@@ -21,7 +21,7 @@ const putAddMovie = async (idCharacter, title) => {
     const character = await Character.findByPk(idCharacter);
 
     const movie = await Movie.findOne({
-      where: { title: title },
+      where: { title: title.toLowerCase() },
     });
     if (character && movie) {
       await character.setMovies(movie);
