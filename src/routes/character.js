@@ -3,6 +3,7 @@ const { Character, Movie, Genre } = require("../db.js");
 const router = Router();
 const { filter } = require("./functions/functionFilter");
 const { validateRegister } = require("./functions/functionValidate");
+const { putDeleteMovie, putAddMovie } = require("./put/putCharacter");
 
 router.get("/", async (req, res) => {
   const { name, age, width, movie } = req.query;
@@ -11,7 +12,7 @@ router.get("/", async (req, res) => {
   let validate = await validateRegister(token);
 
   if (validate === true) {
-    const condition = filter(name, age, width, movie);
+    const condition = filter(name, age, width);
     condition.include = {
       model: Movie,
       attributes: ["id"],
@@ -126,7 +127,7 @@ router.post("/", async (req, res) => {
 });
 
 router.put("/", async (req, res) => {
-  const { id, image, name, age, width, history, token } = req.body;
+  const { idCharacter, image, name, age, width, history, token } = req.body;
 
   let validate = await validateRegister(token);
 
@@ -141,7 +142,7 @@ router.put("/", async (req, res) => {
           history: history && history,
         },
         {
-          where: { id: id },
+          where: { id: idCharacter },
         }
       );
       return res.status(201).send("successfully updated");
@@ -153,14 +154,38 @@ router.put("/", async (req, res) => {
   }
 });
 
+router.put("/movie_delete", async (req, res) => {
+  const { token, idCharacter, idMovie } = req.body;
+  let validate = await validateRegister(token);
+
+  if (validate === true) {
+    const deleteMovie = await putDeleteMovie(idCharacter, idMovie);
+    res.send(deleteMovie);
+  } else {
+    res.status(202).send("try register");
+  }
+});
+
+router.put("/movie_add", async (req, res) => {
+  const { idCharacter, title, token, idMovie } = req.body;
+  let validate = await validateRegister(token);
+
+  if (validate === true) {
+    const updateCharacter = await putAddMovie(idCharacter, title);
+    res.send(updateCharacter);
+  } else {
+    res.status(202).send("try register");
+  }
+});
+
 router.delete("/", async (req, res) => {
-  const { token, id } = req.body;
+  const { token, idCharacter } = req.body;
   let validate = await validateRegister(token);
 
   if (validate === true) {
     try {
       await Character.destroy({
-        where: { id: id },
+        where: { id: idCharacter },
       });
       res.status(201).send("successfully deleted");
     } catch (err) {

@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { Genre } = require("../db.js");
+const { Genre, movie_genre } = require("../db.js");
 const router = Router();
 const { validateRegister } = require("./functions/functionValidate");
 

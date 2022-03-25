@@ -4,7 +4,7 @@
   "description": "Challenge BACKEND alkemy",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon"
   },
   "author": "estdiag",
   "license": "ISC",

@@ -1,8 +1,8 @@
 const { Op } = require("../../db");
 
-function filter(name, age, width, movie) {
+function filter(name, age, width) {
   let condition;
-  if (name || age || width || movie) {
+  if (name || age || width) {
     if (name && age && width) {
       condition = {
         where: {

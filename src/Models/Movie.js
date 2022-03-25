@@ -4,6 +4,11 @@ class Movie extends Model {}
 const initMovie = (sequelize) => {
   Movie.init(
     {
+      id: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+      },
       title: {
         type: DataTypes.STRING,
         allowNull: false,
