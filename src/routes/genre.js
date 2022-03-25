@@ -53,8 +53,12 @@ router.delete("/", async (req, res) => {
 
   if (validate === true) {
     try {
-      await Genre.destroy({ where: { name: name.toLowerCase() } });
-      res.status(201).send("successfully removed");
+      if (name) {
+        await Genre.destroy({ where: { name: name.toLowerCase() } });
+        res.status(201).send("successfully removed");
+      } else {
+        res.status(400).send("add name to delete");
+      }
     } catch (err) {
       res.status(404).send(err.message);
     }

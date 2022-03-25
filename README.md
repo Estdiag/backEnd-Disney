@@ -33,7 +33,7 @@ La base de esta api es: localhost:3001 y puedes usarla con los siguientes endpoi
 | GET    | filter character by name             | localhost:3001/characters             | query  | name                                                              |
 | GET    | filter character by width            | localhost:3001/characters             | query  | width                                                             |
 | GET    | filter character by width, name, age | localhost:3001/characters             | query  | width, name,age (all possible combinations)                       |
-| GET    | filter character by movie            | localhost:3001/characters             | query  | movies (id movie)                                                 |
+| GET    | filter character by movie            | localhost:3001/characters             | query  | movie (id movie)                                                  |
 | POST   | add character                        | localhost:3001/characters             | body   | name, age, width, history, image, movies:[title]                  |
 | PUT    | update character                     | localhost:3001/characters             | body   | idCharacter\*, params to change: name, age, width, history, image |
 | PUT    | delete character movie               | localhost:3001/characters/movieDelete | body   | idCharacter*, idMovie*                                            |
@@ -42,16 +42,18 @@ La base de esta api es: localhost:3001 y puedes usarla con los siguientes endpoi
 
 ### movies
 
-| CRUD   | RESPONSE                     | ROUTE                     | SEND   | INFO                                                                          |
-| ------ | ---------------------------- | ------------------------- | ------ | ----------------------------------------------------------------------------- |
-| GET    | get all movies               | localhost:3001/movies     |        |                                                                               |
-| GET    | get movie                    | localhost:3001/movies/:id | params | id                                                                            |
-| GET    | filter movie by title        | localhost:3001/movies     | query  | title                                                                         |
-| GET    | filter movie by genre        | localhost:3001/movies     | query  | genre (id genre)                                                              |
-| GET    | order movie by creation date | localhost:3001/movies     | query  | order (ASC or DESC)                                                           |
-| POST   | add movie                    | localhost:3001/movies     | body   | title, image, creationDate, qualification: "1" to "5",genres: [{image, name}] |
-| PUT    | update movie                 | localhost:3001/movies     | body   | id\*, params to change: title, image, creationDate, qualification: "1" to "5" |
-| DELETE | delete movie                 | localhost:3001/movies     | body   | id                                                                            |
+| CRUD   | RESPONSE                     | ROUTE                                 | SEND   | INFO                                                                          |
+| ------ | ---------------------------- | ------------------------------------- | ------ | ----------------------------------------------------------------------------- |
+| GET    | get all movies               | localhost:3001/movies                 |        |                                                                               |
+| GET    | get movie                    | localhost:3001/movies/:id             | params | id                                                                            |
+| GET    | filter movie by title        | localhost:3001/movies                 | query  | title                                                                         |
+| GET    | filter movie by genre        | localhost:3001/movies                 | query  | genre (id genre)                                                              |
+| GET    | order movie by creation date | localhost:3001/movies                 | query  | order (ASC or DESC)                                                           |
+| POST   | add movie                    | localhost:3001/movies                 | body   | title, image, creationDate, qualification: "1" to "5",genres: [{image, name}] |
+| PUT    | update movie                 | localhost:3001/movies                 | body   | id\*, params to change: title, image, creationDate, qualification: "1" to "5" |
+| PUT    | delete genre movie           | localhost:3001/characters/genreDelete | body   | idGenre*, idMovie*                                                            |
+| PUT    | add genre to movie           | localhost:3001/characters/genreAdd    | body   | idMovie*, name* (genre)                                                       |
+| DELETE | delete movie                 | localhost:3001/movies                 | body   | id                                                                            |
 
 ### genres
 

@@ -56,7 +56,7 @@ router.get("/", async (req, res) => {
             name: c.name,
           })
         );
-        res.json(character.length ? character : "nothing found");
+        res.status(200).send(character.length ? character : "nothing found");
       } catch (err) {
         res.status(404).send(err.message);
       }
@@ -164,10 +164,14 @@ router.delete("/", async (req, res) => {
 
   if (validate === true) {
     try {
-      await Character.destroy({
-        where: { id: idCharacter },
-      });
-      res.status(201).send("successfully deleted");
+      if (idCharacter) {
+        await Character.destroy({
+          where: { id: idCharacter },
+        });
+        res.status(201).send("successfully deleted");
+      } else {
+        res.status(201).send("add idCharacter to deleted");
+      }
     } catch (err) {
       res.status(401).send(err.message);
     }
@@ -187,13 +191,13 @@ router.get("/:id", async (req, res) => {
       const character = await Character.findByPk(id, {
         include: {
           model: Movie,
-          attributes: ["title"],
+          attributes: ["id", "title"],
           through: {
             attributes: [],
           },
         },
       });
-      res.status(201).send(character);
+      res.status(200).send(character);
     } catch (err) {
       res.status(401).send(err.message);
     }

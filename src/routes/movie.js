@@ -3,6 +3,7 @@ const { Movie, Genre, Character, Op } = require("../db.js");
 const router = Router();
 const { validateRegister } = require("./functions/functionValidate");
 const { filterMovie } = require("./functions/functionFilter");
+const { putDeleteGenre, putAddGenre } = require("./put/putMovie.js");
 
 router.post("/", async (req, res) => {
   const { title, image, creationDate, qualification, genres, token } = req.body;
@@ -71,6 +72,7 @@ router.get("/", async (req, res) => {
           genres: m.Genres.map((id) => `${id.id}`),
         })
       );
+      console.log(genre);
       if (genre) {
         let m = movie.filter((e) => e.genres.includes(genre));
         res.status(200).send(m);
@@ -114,6 +116,30 @@ router.put("/", async (req, res) => {
   }
 });
 
+router.put("/genreDelete", async (req, res) => {
+  const { token, idGenre, idMovie } = req.body;
+  let validate = await validateRegister(token);
+
+  if (validate === true) {
+    const deleteGenre = await putDeleteGenre(idMovie, idGenre);
+    res.send(deleteGenre);
+  } else {
+    res.status(202).send("try register");
+  }
+});
+
+router.put("/genreAdd", async (req, res) => {
+  const { idMovie, name, token } = req.body;
+  let validate = await validateRegister(token);
+
+  if (validate === true) {
+    const updateMovie = await putAddGenre(parseInt(idMovie), name);
+    res.send(updateMovie);
+  } else {
+    res.status(202).send("try register");
+  }
+});
+
 router.get("/:id", async (req, res) => {
   const { token } = req.body;
   const { id } = req.params;
@@ -124,7 +150,7 @@ router.get("/:id", async (req, res) => {
       let movie = await Movie.findByPk(id, {
         include: {
           model: Character,
-          attributes: ["name"],
+          attributes: ["id", "name"],
           through: {
             attributes: [],
           },
@@ -145,10 +171,14 @@ router.delete("/", async (req, res) => {
 
   if (validate === true) {
     try {
-      await Movie.destroy({
-        where: { id: id },
-      });
-      res.status(201).send("successfully removed");
+      if (id) {
+        await Movie.destroy({
+          where: { id: id },
+        });
+        res.status(201).send("successfully removed");
+      } else {
+        res.status(201).send("add id to deleted");
+      }
     } catch (err) {
       res.status(404).send(err);
     }
