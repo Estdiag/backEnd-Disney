@@ -57,7 +57,7 @@ router.get("/", async (req, res) => {
         );
         res.json(character.length ? character : "nothing found");
       } catch (err) {
-        res.status(404).send(err);
+        res.status(404).send(err.message);
       }
     }
   } else {
@@ -114,7 +114,7 @@ router.post("/", async (req, res) => {
 
       res.status(201).send("successfully created");
     } catch (err) {
-      res.status(404).send(err);
+      res.status(404).send(err.message);
     }
   } else {
     res.status(202).send("try register");

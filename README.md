@@ -59,4 +59,4 @@ La base de esta api es: https://disney-back.herokuapp.com y puedes usarla con lo
 | GET    | get genre      | https://disney-back.herokuapp.com/genres/:id | params | id                                  |
 | POST   | add genre      | https://disney-back.herokuapp.com/genres     | body   | image, name                         |
 | PUT    | update genre   | https://disney-back.herokuapp.com/genres     | body   | id\*, params to change: image, name |
-| DELETE | delete genre   | https://disney-back.herokuapp.com/genres     | body   | id                                  |
+| DELETE | delete genre   | https://disney-back.herokuapp.com/genres     | body   | name                                |
