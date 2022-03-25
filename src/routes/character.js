@@ -43,7 +43,7 @@ router.get("/", async (req, res) => {
 
         res.send(c);
       } catch (err) {
-        res.send(err);
+        res.send(err.message);
       }
     } else {
       try {
@@ -57,7 +57,7 @@ router.get("/", async (req, res) => {
         );
         res.json(character.length ? character : "nothing found");
       } catch (err) {
-        res.status(404).send(err);
+        res.status(404).send(err.message);
       }
     }
   } else {
@@ -73,48 +73,52 @@ router.post("/", async (req, res) => {
 
   if (validate === true) {
     try {
-      let newCharacter = await Character.findOrCreate({
-        where: { name: name.toLowerCase() },
-        defaults: {
-          image,
-          name,
-          age,
-          width,
-          history,
-        },
-      });
-
-      movies.forEach(async (m) => {
-        let movie = await Movie.findOrCreate({
-          where: {
-            title: m.title.toLowerCase(),
-            creationDate: m.creationDate,
-          },
+      if (image && name && age && width && history && movies) {
+        let newCharacter = await Character.findOrCreate({
+          where: { name: name?.toLowerCase() },
           defaults: {
-            title: m.title,
-            image: m.image,
-            creationDate: m.creationDate,
-            qualification: m.qualification,
+            image,
+            name,
+            age,
+            width,
+            history,
           },
         });
 
-        await newCharacter[0].setMovies(movie[0]);
-
-        m.genres.forEach(async (g) => {
-          let genre = await Genre.findOrCreate({
+        movies.forEach(async (m) => {
+          let movie = await Movie.findOrCreate({
             where: {
-              name: g.name.toLowerCase(),
+              title: m.title?.toLowerCase(),
+              creationDate: m.creationDate,
             },
-            defaults: { name: g.name, image: g.image },
+            defaults: {
+              title: m.title,
+              image: m.image,
+              creationDate: m.creationDate,
+              qualification: m.qualification,
+            },
           });
 
-          await movie[0].setGenres(genre[0]);
-        });
-      });
+          await newCharacter[0].setMovies(movie[0]);
 
-      res.status(201).send("successfully created");
+          m.genres.forEach(async (g) => {
+            let genre = await Genre.findOrCreate({
+              where: {
+                name: g.name?.toLowerCase(),
+              },
+              defaults: { name: g.name, image: g.image },
+            });
+
+            await movie[0].setGenres(genre[0]);
+          });
+        });
+
+        res.status(201).send("successfully created");
+      } else {
+        res.send("add all params required");
+      }
     } catch (err) {
-      res.status(404).send(err);
+      res.status(404).send(err.message);
     }
   } else {
     res.status(202).send("try register");
@@ -142,7 +146,7 @@ router.put("/", async (req, res) => {
       );
       return res.status(201).send("successfully updated");
     } catch (err) {
-      return res.status(404).send(err);
+      return res.status(404).send(err.message);
     }
   } else {
     res.status(202).send("try register");
@@ -160,7 +164,7 @@ router.delete("/", async (req, res) => {
       });
       res.status(201).send("successfully deleted");
     } catch (err) {
-      res.status(401).send(err);
+      res.status(401).send(err.message);
     }
   } else {
     res.status(202).send("try register");
@@ -186,7 +190,7 @@ router.get("/:id", async (req, res) => {
       });
       res.status(201).send(character);
     } catch (err) {
-      res.status(401).send(err);
+      res.status(401).send(err.message);
     }
   } else {
     res.status(202).send("try register");

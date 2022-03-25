@@ -1,4 +1,4 @@
-# Mundo de Disney BackEnd
+# Mundo de Disney BackEnd LOCAL
 
 Este proyecto es la solución del challenge de participación en ALKEMY. En esta oportunidad las tecnologias utilizadas son: NodeJs, Express, Sequelize y Nodemailer
 
@@ -10,14 +10,14 @@ Esta API esta diseñada para:
 
 - Genero: Agregar, editar, eliminar, ver detalles de un genero.
 
-La base de esta api es: https://disney-back.herokuapp.com y puedes usarla con los siguientes endpoints:
+La base de esta api es: localhost:3001 y puedes usarla con los siguientes endpoints:
 
 ### user
 
-| CRUD | RESPONSE    | ROUTE                                           | SEND | INFO                  |
-| ---- | ----------- | ----------------------------------------------- | ---- | --------------------- |
-| POST | create user | https://disney-back.herokuapp.com/auth/register | body | email, password, name |
-| get  | get token   | https://disney-back.herokuapp.com/auth/login    | body | email, password       |
+| CRUD | RESPONSE    | ROUTE                        | SEND | INFO                  |
+| ---- | ----------- | ---------------------------- | ---- | --------------------- |
+| POST | create user | localhost:3001/auth/register | body | email, password, name |
+| get  | get token   | localhost:3001/auth/login    | body | email, password       |
 
 (tambien llega un correo con el token)
 
@@ -25,37 +25,37 @@ La base de esta api es: https://disney-back.herokuapp.com y puedes usarla con lo
 
 ### characters
 
-| CRUD   | RESPONSE                  | ROUTE                                            | SEND   | INFO                                                                                                                       |
-| ------ | ------------------------- | ------------------------------------------------ | ------ | -------------------------------------------------------------------------------------------------------------------------- |
-| GET    | get all characters        | https://disney-back.herokuapp.com/characters     |        |                                                                                                                            |
-| GET    | get character             | https://disney-back.herokuapp.com/characters/:id | params | id                                                                                                                         |
-| GET    | filter character by age   | https://disney-back.herokuapp.com/characters     | query  | age                                                                                                                        |
-| GET    | filter character by name  | https://disney-back.herokuapp.com/characters     | query  | name                                                                                                                       |
-| GET    | filter character by width | https://disney-back.herokuapp.com/characters     | query  | width                                                                                                                      |
-| GET    | filter character by movie | https://disney-back.herokuapp.com/characters     | query  | movies (id movie)                                                                                                          |
-| POST   | add character             | https://disney-back.herokuapp.com/characters     | body   | name, age, width, history, image, movies:[{title, image, creationDate, qualification: "1" to "5",genres: [{image, name}]}] |
-| PUT    | update character          | https://disney-back.herokuapp.com/characters     | body   | id\*, params to change: name, age, width, history, image                                                                   |
-| DELETE | delete character          | https://disney-back.herokuapp.com/characters     | body   | id                                                                                                                         |
+| CRUD   | RESPONSE                  | ROUTE                         | SEND   | INFO                                                                                                                       |
+| ------ | ------------------------- | ----------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
+| GET    | get all characters        | localhost:3001/characters     |        |                                                                                                                            |
+| GET    | get character             | localhost:3001/characters/:id | params | id                                                                                                                         |
+| GET    | filter character by age   | localhost:3001/characters     | query  | age                                                                                                                        |
+| GET    | filter character by name  | localhost:3001/characters     | query  | name                                                                                                                       |
+| GET    | filter character by width | localhost:3001/characters     | query  | width                                                                                                                      |
+| GET    | filter character by movie | localhost:3001/characters     | query  | movies (id movie)                                                                                                          |
+| POST   | add character             | localhost:3001/characters     | body   | name, age, width, history, image, movies:[{title, image, creationDate, qualification: "1" to "5",genres: [{image, name}]}] |
+| PUT    | update character          | localhost:3001/characters     | body   | id\*, params to change: name, age, width, history, image                                                                   |
+| DELETE | delete character          | localhost:3001/characters     | body   | id                                                                                                                         |
 
 ### movies
 
-| CRUD   | RESPONSE                     | ROUTE                                        | SEND   | INFO                                                                          |
-| ------ | ---------------------------- | -------------------------------------------- | ------ | ----------------------------------------------------------------------------- |
-| GET    | get all movies               | https://disney-back.herokuapp.com/movies     |        |                                                                               |
-| GET    | get movie                    | https://disney-back.herokuapp.com/movies/:id | params | id                                                                            |
-| GET    | filter movie by title        | https://disney-back.herokuapp.com/movies     | query  | title                                                                         |
-| GET    | filter movie by genre        | https://disney-back.herokuapp.com/movies     | query  | genre (id genre)                                                              |
-| GET    | order movie by creation date | https://disney-back.herokuapp.com/movies     | query  | order (ASC or DESC)                                                           |
-| POST   | add movie                    | https://disney-back.herokuapp.com/movies     | body   | title, image, creationDate, qualification: "1" to "5",genres: [{image, name}] |
-| PUT    | update movie                 | https://disney-back.herokuapp.com/movies     | body   | id\*, params to change: title, image, creationDate, qualification: "1" to "5" |
-| DELETE | delete movie                 | https://disney-back.herokuapp.com/movies     | body   | id                                                                            |
+| CRUD   | RESPONSE                     | ROUTE                     | SEND   | INFO                                                                          |
+| ------ | ---------------------------- | ------------------------- | ------ | ----------------------------------------------------------------------------- |
+| GET    | get all movies               | localhost:3001/movies     |        |                                                                               |
+| GET    | get movie                    | localhost:3001/movies/:id | params | id                                                                            |
+| GET    | filter movie by title        | localhost:3001/movies     | query  | title                                                                         |
+| GET    | filter movie by genre        | localhost:3001/movies     | query  | genre (id genre)                                                              |
+| GET    | order movie by creation date | localhost:3001/movies     | query  | order (ASC or DESC)                                                           |
+| POST   | add movie                    | localhost:3001/movies     | body   | title, image, creationDate, qualification: "1" to "5",genres: [{image, name}] |
+| PUT    | update movie                 | localhost:3001/movies     | body   | id\*, params to change: title, image, creationDate, qualification: "1" to "5" |
+| DELETE | delete movie                 | localhost:3001/movies     | body   | id                                                                            |
 
 ### genres
 
-| CRUD   | RESPONSE       | ROUTE                                        | SEND   | INFO                                |
-| ------ | -------------- | -------------------------------------------- | ------ | ----------------------------------- |
-| GET    | get all genres | https://disney-back.herokuapp.com/genres     |        |                                     |
-| GET    | get genre      | https://disney-back.herokuapp.com/genres/:id | params | id                                  |
-| POST   | add genre      | https://disney-back.herokuapp.com/genres     | body   | image, name                         |
-| PUT    | update genre   | https://disney-back.herokuapp.com/genres     | body   | id\*, params to change: image, name |
-| DELETE | delete genre   | https://disney-back.herokuapp.com/genres     | body   | id                                  |
+| CRUD   | RESPONSE       | ROUTE                     | SEND   | INFO                                |
+| ------ | -------------- | ------------------------- | ------ | ----------------------------------- |
+| GET    | get all genres | localhost:3001/genres     |        |                                     |
+| GET    | get genre      | localhost:3001/genres/:id | params | id                                  |
+| POST   | add genre      | localhost:3001/genres     | body   | image, name                         |
+| PUT    | update genre   | localhost:3001/genres     | body   | id\*, params to change: image, name |
+| DELETE | delete genre   | localhost:3001/genres     | body   | name                                |
