@@ -7,22 +7,26 @@ router.post("/register", async (req, res) => {
   const { name, email, password } = req.body;
 
   try {
-    await User.findOrCreate({
-      where: { email: email.toLowerCase() },
-      defaults: {
-        name: name,
-        email: email.toLowerCase(),
-        password: password,
-      },
-    });
-    const user = await User.findOne({
-      where: { email: email, password: password },
-    });
-    token = user.dataValues.id;
-    sendEmail(email, name, token);
-    res.status(200).send("successfully created");
+    if ((name, email, password)) {
+      await User.findOrCreate({
+        where: { email: email.toLowerCase() },
+        defaults: {
+          name: name,
+          email: email.toLowerCase(),
+          password: password,
+        },
+      });
+      const user = await User.findOne({
+        where: { email: email, password: password },
+      });
+      token = user.dataValues.id;
+      sendEmail(email, name, token);
+      res.status(200).send("successfully created");
+    } else {
+      res.send("add all params required");
+    }
   } catch (err) {
-    res.status(404).send(err);
+    res.status(404).send(err.message);
   }
 });
 
@@ -39,7 +43,7 @@ router.get("/login", async (req, res) => {
       (u.email = user.dataValues.email),
       res.status(201).send(u);
   } catch (err) {
-    res.status(404).send(err);
+    res.status(404).send(err.message);
   }
 });
 

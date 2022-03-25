@@ -11,28 +11,32 @@ router.post("/", async (req, res) => {
 
   if (validate === true) {
     try {
-      const movie = await Movie.findOrCreate({
-        where: { title: title.toLowerCase() },
-        defaults: {
-          title: title,
-          image: image,
-          creationDate: creationDate,
-          qualification: qualification,
-        },
-      });
-      genres.forEach(async (g) => {
-        let genre = await Genre.findOrCreate({
-          where: {
-            name: g.name.toLowerCase(),
+      if (title && image && creationDate && qualification && genres) {
+        const movie = await Movie.findOrCreate({
+          where: { title: title.toLowerCase() },
+          defaults: {
+            title: title,
+            image: image,
+            creationDate: creationDate,
+            qualification: qualification,
           },
-          defaults: { name: g.name, image: g.image },
         });
+        genres.forEach(async (g) => {
+          let genre = await Genre.findOrCreate({
+            where: {
+              name: g.name.toLowerCase(),
+            },
+            defaults: { name: g.name, image: g.image },
+          });
 
-        await movie[0].setGenres(genre[0]);
-      });
-      res.send("successfully created");
+          await movie[0].setGenres(genre[0]);
+        });
+        res.send("successfully created");
+      } else {
+        res.send("add all params required");
+      }
     } catch (err) {
-      res.status(404).send(err);
+      res.status(404).send(err.message);
     }
   } else {
     res.status(202).send("try register");

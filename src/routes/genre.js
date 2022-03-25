@@ -10,16 +10,20 @@ router.post("/", async (req, res) => {
 
   if (validate === true) {
     try {
-      await Genre.findOrCreate({
-        where: { name: name.toLowerCase() },
-        defaults: {
-          image: image,
-          name: name,
-        },
-      });
-      res.status(200).send("successfully created");
+      if (image && name) {
+        await Genre.findOrCreate({
+          where: { name: name.toLowerCase() },
+          defaults: {
+            image: image,
+            name: name,
+          },
+        });
+        res.status(200).send("successfully created");
+      } else {
+        res.send("add all params required");
+      }
     } catch (err) {
-      res.status(404).send(err);
+      res.status(404).send(err.message);
     }
   } else {
     res.status(202).send("try register");
@@ -35,7 +39,7 @@ router.get("/", async (req, res) => {
       const genres = await Genre.findAll();
       res.status(201).send(genres);
     } catch (err) {
-      res.status(401).send(err);
+      res.status(401).send(err.message);
     }
   } else {
     res.status(202).send("try register");
@@ -52,7 +56,7 @@ router.delete("/", async (req, res) => {
       await Genre.destroy({ where: { name: name.toLowerCase() } });
       res.status(201).send("successfully removed");
     } catch (err) {
-      res.status(404).send(err);
+      res.status(404).send(err.message);
     }
   } else {
     res.status(202).send("try register");
@@ -76,7 +80,7 @@ router.put("/", async (req, res) => {
       );
       res.status(201).send("successfully updated");
     } catch (err) {
-      res.status(404).send(err);
+      res.status(404).send(err.message);
     }
   } else {
     res.status(202).send("try register");
@@ -94,7 +98,7 @@ router.get("/:id", async (req, res) => {
       const genre = await Genre.findByPk(id);
       res.status(201).send(genre);
     } catch (err) {
-      res.status(404).send(err);
+      res.status(404).send(err.message);
     }
   } else {
     res.status(202).send("try register");
