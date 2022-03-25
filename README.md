@@ -25,20 +25,20 @@ La base de esta api es: localhost:3001 y puedes usarla con los siguientes endpoi
 
 ### characters
 
-| CRUD   | RESPONSE                             | ROUTE                                  | SEND   | INFO                                                              |
-| ------ | ------------------------------------ | -------------------------------------- | ------ | ----------------------------------------------------------------- |
-| GET    | get all characters                   | localhost:3001/characters              |        |                                                                   |
-| GET    | get character                        | localhost:3001/characters/:id          | params | id                                                                |
-| GET    | filter character by age              | localhost:3001/characters              | query  | age                                                               |
-| GET    | filter character by name             | localhost:3001/characters              | query  | name                                                              |
-| GET    | filter character by width            | localhost:3001/characters              | query  | width                                                             |
-| GET    | filter character by width, name, age | localhost:3001/characters              | query  | width, name,age (all possible combinations)                       |
-| GET    | filter character by movie            | localhost:3001/characters              | query  | movies (id movie)                                                 |
-| POST   | add character                        | localhost:3001/characters              | body   | name, age, width, history, image, movies:[title]                  |
-| PUT    | update character                     | localhost:3001/characters              | body   | idCharacter\*, params to change: name, age, width, history, image |
-| PUT    | delete character movie               | localhost:3001/characters/movie_delete | body   | idCharacter*, idMovie*                                            |
-| PUT    | add movie to character               | localhost:3001/characters/movie_add    | body   | idCharacter*, title* (movie)                                      |
-| DELETE | delete character                     | localhost:3001/characters              | body   | id                                                                |
+| CRUD   | RESPONSE                             | ROUTE                                 | SEND   | INFO                                                              |
+| ------ | ------------------------------------ | ------------------------------------- | ------ | ----------------------------------------------------------------- |
+| GET    | get all characters                   | localhost:3001/characters             |        |                                                                   |
+| GET    | get character                        | localhost:3001/characters/:id         | params | id                                                                |
+| GET    | filter character by age              | localhost:3001/characters             | query  | age                                                               |
+| GET    | filter character by name             | localhost:3001/characters             | query  | name                                                              |
+| GET    | filter character by width            | localhost:3001/characters             | query  | width                                                             |
+| GET    | filter character by width, name, age | localhost:3001/characters             | query  | width, name,age (all possible combinations)                       |
+| GET    | filter character by movie            | localhost:3001/characters             | query  | movies (id movie)                                                 |
+| POST   | add character                        | localhost:3001/characters             | body   | name, age, width, history, image, movies:[title]                  |
+| PUT    | update character                     | localhost:3001/characters             | body   | idCharacter\*, params to change: name, age, width, history, image |
+| PUT    | delete character movie               | localhost:3001/characters/movieDelete | body   | idCharacter*, idMovie*                                            |
+| PUT    | add movie to character               | localhost:3001/characters/movieAdd    | body   | idCharacter*, title* (movie)                                      |
+| DELETE | delete character                     | localhost:3001/characters             | body   | idCharacter                                                       |
 
 ### movies
 
