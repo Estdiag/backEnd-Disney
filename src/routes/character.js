@@ -43,7 +43,7 @@ router.get("/", async (req, res) => {
 
         res.send(c);
       } catch (err) {
-        res.send(err);
+        res.send(err.message);
       }
     } else {
       try {
@@ -74,7 +74,7 @@ router.post("/", async (req, res) => {
   if (validate === true) {
     try {
       let newCharacter = await Character.findOrCreate({
-        where: { name: name.toLowerCase() },
+        where: { name: name?.toLowerCase() },
         defaults: {
           image,
           name,
@@ -87,7 +87,7 @@ router.post("/", async (req, res) => {
       movies.forEach(async (m) => {
         let movie = await Movie.findOrCreate({
           where: {
-            title: m.title.toLowerCase(),
+            title: m.title?.toLowerCase(),
             creationDate: m.creationDate,
           },
           defaults: {
@@ -103,7 +103,7 @@ router.post("/", async (req, res) => {
         m.genres.forEach(async (g) => {
           let genre = await Genre.findOrCreate({
             where: {
-              name: g.name.toLowerCase(),
+              name: g.name?.toLowerCase(),
             },
             defaults: { name: g.name, image: g.image },
           });
@@ -142,7 +142,7 @@ router.put("/", async (req, res) => {
       );
       return res.status(201).send("successfully updated");
     } catch (err) {
-      return res.status(404).send(err);
+      return res.status(404).send(err.message);
     }
   } else {
     res.status(202).send("try register");
@@ -160,7 +160,7 @@ router.delete("/", async (req, res) => {
       });
       res.status(201).send("successfully deleted");
     } catch (err) {
-      res.status(401).send(err);
+      res.status(401).send(err.message);
     }
   } else {
     res.status(202).send("try register");
@@ -186,7 +186,7 @@ router.get("/:id", async (req, res) => {
       });
       res.status(201).send(character);
     } catch (err) {
-      res.status(401).send(err);
+      res.status(401).send(err.message);
     }
   } else {
     res.status(202).send("try register");
