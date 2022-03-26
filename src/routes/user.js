@@ -7,7 +7,7 @@ router.post("/register", async (req, res) => {
   const { name, email, password } = req.body;
 
   try {
-    if ((name, email, password)) {
+    if (name && email && password) {
       await User.findOrCreate({
         where: { email: email.toLowerCase() },
         defaults: {
