@@ -53,7 +53,7 @@ router.get("/", async (req, res) => {
         let character = [];
         characters?.map((c) =>
           character.push({
-            id: id,
+            id: c.id,
             image: c.image,
             name: c.name,
           })
