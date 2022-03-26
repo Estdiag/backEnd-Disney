@@ -1,4 +1,4 @@
-# Mundo de Disney BackEnd LOCAL
+# Mundo de Disney BackEnd
 
 Este proyecto es la solución del challenge de participación en ALKEMY. En esta oportunidad las tecnologias utilizadas son: NodeJs, Express, Sequelize y Nodemailer
 
