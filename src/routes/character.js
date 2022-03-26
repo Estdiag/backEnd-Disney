@@ -34,6 +34,7 @@ router.get("/", async (req, res) => {
       let character = [];
       characters?.map((c) =>
         character.push({
+          id: c.id,
           image: c.image,
           name: c.name,
           movies: c.Movies.map((id) => `${id.id}`),
@@ -52,6 +53,7 @@ router.get("/", async (req, res) => {
         let character = [];
         characters?.map((c) =>
           character.push({
+            id: c.id,
             image: c.image,
             name: c.name,
           })
@@ -139,8 +141,12 @@ router.put("/movieDelete", async (req, res) => {
   let validate = await validateRegister(token);
 
   if (validate === true) {
-    const deleteMovie = await putDeleteMovie(idCharacter, idMovie);
-    res.send(deleteMovie);
+    if (idCharacter && idMovie) {
+      const deleteMovie = await putDeleteMovie(idCharacter, idMovie);
+      res.send(deleteMovie);
+    } else {
+      res.status(202).send("add all params required");
+    }
   } else {
     res.status(202).send("try register");
   }
@@ -151,8 +157,12 @@ router.put("/movieAdd", async (req, res) => {
   let validate = await validateRegister(token);
 
   if (validate === true) {
-    const updateCharacter = await putAddMovie(idCharacter, title);
-    res.send(updateCharacter);
+    if (idCharacter && title) {
+      const updateCharacter = await putAddMovie(idCharacter, title);
+      res.send(updateCharacter);
+    } else {
+      res.status(202).send("add all params required");
+    }
   } else {
     res.status(202).send("try register");
   }

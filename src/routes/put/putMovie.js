@@ -18,7 +18,7 @@ const putDeleteGenre = async (idMovie, idGenre) => {
 };
 const putAddGenre = async (idMovie, name) => {
   try {
-    const movie = await Movie.findByPk(idMovie);
+    const movie = await Movie.findByPk(parseInt(idMovie));
 
     const genre = await Genre.findOne({
       where: { name: name.toLowerCase() },
