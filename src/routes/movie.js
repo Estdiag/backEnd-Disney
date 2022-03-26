@@ -66,6 +66,7 @@ router.get("/", async (req, res) => {
       let movie = [];
       movies?.map((m) =>
         movie.push({
+          id: m.id,
           image: m.image,
           title: m.title,
           creationDate: m.creationDate,
