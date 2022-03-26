@@ -42,18 +42,18 @@ La base de esta api es: https://disney-back.herokuapp.com y puedes usarla con lo
 
 ### movies
 
-| CRUD   | RESPONSE                     | ROUTE                                                     | SEND   | INFO                                                                          |
-| ------ | ---------------------------- | --------------------------------------------------------- | ------ | ----------------------------------------------------------------------------- |
-| GET    | get all movies               | https://disney-back.herokuapp.com /movies                 |        |                                                                               |
-| GET    | get movie                    | https://disney-back.herokuapp.com /movies/:id             | params | id                                                                            |
-| GET    | filter movie by title        | https://disney-back.herokuapp.com /movies                 | query  | title                                                                         |
-| GET    | filter movie by genre        | https://disney-back.herokuapp.com /movies                 | query  | genre (id genre)                                                              |
-| GET    | order movie by creation date | https://disney-back.herokuapp.com /movies                 | query  | order (ASC or DESC)                                                           |
-| POST   | add movie                    | https://disney-back.herokuapp.com /movies                 | body   | title, image, creationDate, qualification: "1" to "5",genres: [{image, name}] |
-| PUT    | update movie                 | https://disney-back.herokuapp.com /movies                 | body   | id\*, params to change: title, image, creationDate, qualification: "1" to "5" |
-| PUT    | delete genre movie           | https://disney-back.herokuapp.com /characters/genreDelete | body   | idGenre*, idMovie*                                                            |
-| PUT    | add genre to movie           | https://disney-back.herokuapp.com /characters/genreAdd    | body   | idMovie*, name* (genre)                                                       |
-| DELETE | delete movie                 | https://disney-back.herokuapp.com /movies                 | body   | id                                                                            |
+| CRUD   | RESPONSE                     | ROUTE                                                 | SEND   | INFO                                                                          |
+| ------ | ---------------------------- | ----------------------------------------------------- | ------ | ----------------------------------------------------------------------------- |
+| GET    | get all movies               | https://disney-back.herokuapp.com /movies             |        |                                                                               |
+| GET    | get movie                    | https://disney-back.herokuapp.com /movies/:id         | params | id                                                                            |
+| GET    | filter movie by title        | https://disney-back.herokuapp.com /movies             | query  | title                                                                         |
+| GET    | filter movie by genre        | https://disney-back.herokuapp.com /movies             | query  | genre (id genre)                                                              |
+| GET    | order movie by creation date | https://disney-back.herokuapp.com /movies             | query  | order (ASC or DESC)                                                           |
+| POST   | add movie                    | https://disney-back.herokuapp.com /movies             | body   | title, image, creationDate, qualification: "1" to "5",genres: [{image, name}] |
+| PUT    | update movie                 | https://disney-back.herokuapp.com /movies             | body   | id\*, params to change: title, image, creationDate, qualification: "1" to "5" |
+| PUT    | delete genre movie           | https://disney-back.herokuapp.com /movies/genreDelete | body   | idGenre*, idMovie*                                                            |
+| PUT    | add genre to movie           | https://disney-back.herokuapp.com /movies/genreAdd    | body   | idMovie*, name* (genre)                                                       |
+| DELETE | delete movie                 | https://disney-back.herokuapp.com /movies             | body   | id                                                                            |
 
 ### genres
 
